@@ -49,6 +49,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
               <button
                 className="p-2 cursor-pointer"
                 onClick={(e) => {
+                  e.stopPropagation();
                   onFileSelect?.(null);
                 }}
               >
